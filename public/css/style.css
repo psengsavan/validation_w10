@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Comic Neue', sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+/* HEADER */
+header{
+    background: #0a0a1f;
+}
+header div {
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight:600;
+}
+.wrapper{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+}
+nav a, .wrapper, .hover{
+    padding: 0 20px;
+}
+li{
+    list-style: none;
+}
+nav a, .hover{
+    display: block;
+    text-decoration: none;
+    transition: .25s ease-in;
+}
+nav a:hover, .hover:hover{
+    transform: translateY(-3px);
+    color: #eedd41;
+    text-shadow: 0px 3px 1px rgba(88, 88, 88, 0.747)
+}
+
+.lightgrey{
+    color: rgb(231, 231, 231);
+}
+
+/* SCROLLING MENU */
+.none{
+    display: none;
+    text-align: right;
+}
+.scrolling{
+    position: relative;
+
+}
+
+.scrolling:hover>.none {
+    display: block;
+    position: absolute;
+    top: 90px
+}
+.none a{
+    padding : 5px 20px;
+}
+
+/* MAIN */
+
+main{
+    background: url('../img/comic_wallpaper.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5em;
+    font-weight: 500;
+    color: white;
+}
+main p{
+    padding: 10px 0;
+}
+h1{
+    padding: 40px 20px;
+    letter-spacing: 0.2em;
+    color: rgb(240, 234, 234);
+    text-shadow: 3px 3px 5px #0a0a1f;
+}
+input, select, button{
+    font-family: 'Comic Neue';
+}
