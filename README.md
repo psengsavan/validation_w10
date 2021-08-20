@@ -1,10 +1,13 @@
 # VALIDATION W10 FRAMEWORK PHP
-## Phoungmalay SENGSAVAN
+### Phoungmalay SENGSAVAN
 
 ## MISE EN PLACE DU PROJET
-- une fois le projet récupéré, copier le fichier .env.example en .env dans le même dossier
+- une fois le projet cloné, installer Composer
 ```
-cd nomDuProjet
+composer install
+```
+- copier le fichier .env.example en .env dans le même dossier
+```
 cp .env.example .env
 ```
 - créer une base de donnée appelée "validation" via l'outil à disposition, phpMyAdmin pour ma part
@@ -14,4 +17,8 @@ DB_PORT=8889
 DB_DATABASE=validation
 DB_USERNAME=root
 DB_PASSWORD=root
+```
+- Faire les migrations avec php artisan
+```
+php artisan migrate --seed
 ```
